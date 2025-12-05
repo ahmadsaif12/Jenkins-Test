@@ -3,11 +3,13 @@ package main
 import "fmt"
 
 func main() {
+	// print even numbers
 	var n int
-	fmt.Println("Enter any number :", n)
+	fmt.Println(" Enter any number :", n)
 	fmt.Scan(&n)
-
-	for i := 1; i <= n; i++ {
-		fmt.Printf(" %d * %d = %d\n ", n, i, n*i) ///multiplication table
+	if n%2 == 0 {
+		fmt.Printf("%d is even number \n", n)
+	} else {
+		fmt.Printf("%d is odd number\n", n)
 	}
 }
