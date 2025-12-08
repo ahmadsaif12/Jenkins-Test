@@ -13,8 +13,9 @@ func main() {
 	fmt.Printf(" the additon of two number is %d", result)
 	// print even numbers
 	var n int
-	fmt.Println(" Enter any number :", n)
+	fmt.Println(" Enter any number :")
 	fmt.Scan(&n)
+
 	if n%2 == 0 {
 		fmt.Printf("%d is even number \n", n)
 	} else {
