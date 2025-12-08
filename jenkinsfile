@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    tools {
+        go 'Go_1.22.2'   
+    }
+
+    stages {
+
+        stage("Build") {
+            steps {
+                sh 'go build -o myapp'
+            }
+        }
+
+        stage("Run Program") {
+            steps {
+                sh 'echo "10" | ./myapp'
+            }
+        }
+    }
+}
